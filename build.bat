@@ -52,6 +52,8 @@ REM Go to application directory.
 cd Test 
 
 REM Build application.
+REM HOW TO SPECIFY THE LIBRARY PATH.
+REM https://stackoverflow.com/questions/12124739/visual-c-library-directories-command-line-equivalent
 cl /EHsc /I../YahooAPIWrapper test.cpp YahooAPIWrapper.lib /link /LIBPATH:../../build_dotnet_cpp_wrapper
 
 REM Move binaries to build directory.
