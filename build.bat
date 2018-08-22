@@ -32,6 +32,8 @@ REM Go to wrapper directory.
 cd YahooApiWrapper
 
 REM Build wrapper.
+REM HOW TO SPECIFY THE USING DIRECTORY
+REM https://msdn.microsoft.com/en-us/library/x1x72k9t.aspx
 cl /clr /AI../../build_dotnet_cpp_wrapper /LD YahooAPIWrapper.cpp
 
 REM Move binaries to build directory.
